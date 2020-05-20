@@ -24,12 +24,14 @@ export class TarjaService {
     {
       titulo: 'VESTUARIO',
       descripcion:
-        'Vestimenta adecuada para el tarjador: cascos, \nbotas, \ngafas, \nchaleco',
+        'Vestimenta adecuada para el tarjador: cascos, \nbotas, \ngafas, \nchaleco, \n Arnés, etc...',
       imgs: [
         'vestuario.jpg',
         'vestuario_1.png',
         'vestuario_2.png',
         'vestuario_3.png',
+        'vestuario_4.jpg',
+        'vestuario_5.jpg',
       ],
     },
     {
