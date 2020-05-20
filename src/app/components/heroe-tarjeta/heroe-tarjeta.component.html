@@ -1,0 +1,14 @@
+<div class="card animated fadeIn">
+  <img [src]="'assets/img/' + heroe.imgs[0]" class="card-img-top" />
+  <div class="card-body">
+    <h5 class="card-title">{{ heroe?.titulo }}</h5>
+    <p class="card-text">{{ heroe?.descripcion | contentText: 60 }}</p>
+    <button
+      type="button"
+      (click)="verHeroe()"
+      class="btn btn-outline-primary btn-block"
+    >
+      Ver mas...
+    </button>
+  </div>
+</div>

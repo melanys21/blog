@@ -1,0 +1,28 @@
+<div class="row animated fadeIn fast">
+  <div class="col-md-4">
+    <img [src]="'assets/img/' + heroe.imgs[0]" class="img-fluid" />
+    <br /><br />
+    <a [routerLink]="['/blog']" class="btn btn-outline-danger btn-block"
+      >Regresar</a
+    >
+  </div>
+  <div class="col-md-8">
+    <h3>{{ heroe.titulo }}</h3>
+    <br />
+    <div>
+      {{ heroe.descripcion }}
+    </div>
+  </div>
+</div>
+<div *ngIf="heroe.imgs.length > 1" class="row animated fadeIn fast">
+  <div class="col-md-12">
+    <div class="card-columns">
+      <div
+        class="card animated fadeIn"
+        *ngFor="let img of heroe.imgs; let i = index"
+      >
+        <img *ngIf="i !== 0" [src]="'assets/img/' + img" class="card-img-top" />
+      </div>
+    </div>
+  </div>
+</div>
